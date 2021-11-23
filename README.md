@@ -2,7 +2,7 @@
 This solution is designed to allow Things connected to AWS IotCore publishing MQTT messages to connect to an instance of Thingworx server. 
 The solution consists of 3 parts as explained below. Please note that this stack only supports MQTT protocol.
 
-###ThingworxDataFetcherLambda
+### ThingworxDataFetcherLambda
 Thingworx data fetcher lambda function is responsible for fetching Thing Models and Things from thingworx and populating the name of each Thing 
 as a key in Redis cluster. Each key in Redis will contain the data model for the Thing as well the name of Redis topic for the 
 instance of clint connector application that it is assigned to. upon reading things from Thingworx this lambda randomly assigns each Thing 
@@ -76,7 +76,7 @@ Cloud Formation script that will create all necessary AWS resources. Please foll
 22. wait for the build to complete. It will take approximately 3 minutes.
 23. If build was successfully finish the stack is fully operational
 
-###Post deployment test
+### Post deployment test
 After finishing steps above you should be able to test the stack by registering Things on AWS Iot core. with steps described below:
 1. Create a new Thing in AWS IotCore and call it `MyTestDevice1`. Please adhere to Thingworx naming conventions for naming Things otherwise messages
    From IotCore will not be routed to Thingworx. Make sure to add a classic shadow (`Unnamed shadow (classic)`) for the Thing in AWS IotCore. This is required for sending messages to the device from Thingworx
