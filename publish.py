@@ -8,11 +8,11 @@ import time as t
 import json
 
 # Define ENDPOINT, CLIENT_ID, PATH_TO_CERTIFICATE, PATH_TO_PRIVATE_KEY, PATH_TO_AMAZON_ROOT_CA_1, MESSAGE, TOPIC, and RANGE
-ENDPOINT = "a1z60dayqonw5-ats.iot.us-west-2.amazonaws.com"
-CLIENT_ID = "MyTestDevicePV1"
-PATH_TO_CERTIFICATE = "certificates/da375ed26871c32952438a9243d8d9493cf1f16d33490eb88bfb5ee7c0f884dd-certificate.pem.crt"
-PATH_TO_PRIVATE_KEY = "certificates/da375ed26871c32952438a9243d8d9493cf1f16d33490eb88bfb5ee7c0f884dd-private.pem.key"
-PATH_TO_AMAZON_ROOT_CA_1 = "certificates/root.pem"
+ENDPOINT = ""
+CLIENT_ID = ""
+PATH_TO_CERTIFICATE = ""
+PATH_TO_PRIVATE_KEY = ""
+PATH_TO_AMAZON_ROOT_CA_1 = ""
 
 TOPIC = "/sample/topic"
 RANGE = 100
